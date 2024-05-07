@@ -11,7 +11,9 @@ function App() {
 
   return (
     <>
-      {telegram.WebApp.initData}
+    <ul>{telegram.WebApp.initData}</ul>
+    <ul>{telegram.WebApp.platform}</ul>
+    <ul>{telegram.WebApp.version}</ul>
       {/* <p>{tg}</p> */}
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">
