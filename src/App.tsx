@@ -4,7 +4,7 @@ import { TelegramWebAppContainer } from '@telegram-web-app/core';
 function App() {
   const telegram = new TelegramWebAppContainer();
   telegram.WebApp.ready();
-]
+
   let params = new URLSearchParams(telegram.WebApp.initData);
   let jsonObject: any = {};
 
