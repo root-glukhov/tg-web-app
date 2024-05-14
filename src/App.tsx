@@ -28,13 +28,9 @@ function App() {
   return (
     <>
       <h3>Headers</h3>
-      {headers ? 
-        <pre className="read-the-docs">
-          {JSON.stringify(headers, null, 2)}
-        </pre>
-      :
-        "Загрузка..."
-      }
+      <pre className="read-the-docs">
+        {JSON.stringify(headers, null, 2)}
+      </pre>
 
       <h3>User info</h3>
       <code>telegram.WebApp.initData:</code>
