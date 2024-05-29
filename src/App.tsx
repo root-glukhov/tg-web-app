@@ -6,7 +6,7 @@ function App() {
   const [headers, setHeaders] = useState(null);
 
   useEffect(() => {
-    fetch('https://3833-78-140-245-95.ngrok-free.app/headers')
+    fetch('https://0d60-78-140-245-95.ngrok-free.app/headers')
       .then(response => response.json())
       .then(data => setHeaders(data))
   }, []);
