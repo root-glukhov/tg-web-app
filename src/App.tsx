@@ -6,10 +6,13 @@ function App() {
   const [headers, setHeaders] = useState(null);
 
   useEffect(() => {
-    fetch('https://0d60-78-140-245-95.ngrok-free.app/headers')
+    fetch('http://78.140.245.95:5001/headers')
       .then(response => response.json())
       .then(data => setHeaders(data))
   }, []);
+
+  // https://0ba3-78-140-245-95.ngrok-free.app -> http://localhost:5173                                                                                                                
+  // https://fe2c-78-140-245-95.ngrok-free.app -> http://localhost:5001     
 
   const telegram = new TelegramWebAppContainer();
   telegram.WebApp.ready();
