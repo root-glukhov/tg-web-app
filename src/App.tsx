@@ -6,7 +6,7 @@ function App() {
   const [headers, setHeaders] = useState(null);
 
   useEffect(() => {
-    fetch('http://78.140.245.95:5001/headers')
+    fetch('http://78.140.245.95:5001/headers', { method: 'GET', })
       .then(response => response.json())
       .then(data => setHeaders(data))
   }, []);
