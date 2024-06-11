@@ -29,7 +29,7 @@ function App() {
     <>
       <h3>Window size</h3>
       <p className="read-the-docs">
-        {window.innerWidth}x{window.innerHeight}
+        {screen.width}x{screen.height}
       </p>
 
       <h3>Headers</h3>
