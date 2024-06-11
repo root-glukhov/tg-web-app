@@ -27,6 +27,11 @@ function App() {
 
   return (
     <>
+      <h3>Window size</h3>
+      <p className="read-the-docs">
+        {window.innerWidth}x{window.innerHeight}
+      </p>
+
       <h3>Headers</h3>
       <pre className="read-the-docs">
         {JSON.stringify(headers, null, 2)}
