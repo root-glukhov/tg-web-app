@@ -3,7 +3,7 @@ import './App.css'
 import { TelegramWebAppContainer } from '@telegram-web-app/core';
 
 function App() {
-  const [headers, setHeaders] = useState(null);
+  const [_, setHeaders] = useState(null);
 
   useEffect(() => {
     fetch('https://httpbin.org/headers')
