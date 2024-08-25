@@ -3,7 +3,7 @@ import './App.css'
 import { TelegramWebAppContainer } from '@telegram-web-app/core';
 
 function App() {
-  const [_, setHeaders] = useState(null);
+  const [headers, setHeaders] = useState(null);
 
   useEffect(() => {
     fetch('https://httpbin.org/headers')
@@ -32,7 +32,7 @@ function App() {
         {screen.width}x{screen.height}
       </p>
 
-      {/* <h3>Headers</h3>
+      <h3>Headers</h3>
       <pre className="read-the-docs">
         {JSON.stringify(headers, null, 2)}
       </pre>
@@ -43,7 +43,7 @@ function App() {
         {JSON.stringify(jsonObject, null, 2)}
       </pre>
       <code>telegram.WebApp.platform: <p className="read-the-docs">{telegram.WebApp.platform}</p></code>
-      <code>telegram.WebApp.version: <p className="read-the-docs">{telegram.WebApp.version}</p></code> */}
+      <code>telegram.WebApp.version: <p className="read-the-docs">{telegram.WebApp.version}</p></code>
     </>
   )
 }
